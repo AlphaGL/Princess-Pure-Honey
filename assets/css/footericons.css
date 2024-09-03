@@ -1,0 +1,20 @@
+
+.social-icons a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 0;
+        font-size: 16px;
+}
+
+.social-icons a.facebook { color: #1877f2; }
+.social-icons a.twitter { color: #1da1f2; }
+.social-icons a.instagram { color: #c32aa3; }
+.social-icons a.linkedin { color: #0077b5; }
+.social-icons a.pinterest { color: #e60023; }
+
+.copy a.github { color: #333; }
+.copy a.google-plus { color: #db4437; }
+.copy a.pinterest { color: #e60023; }
+.copy a.twitter { color: #1da1f2; }
+.copy a.facebook { color: #1877f2; }

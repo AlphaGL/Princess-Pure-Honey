@@ -12,7 +12,9 @@
         <link rel="stylesheet" href="assets/plugins/testimonial/css/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/plugins/testimonial/css/owl.theme.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/footericons.css" />
     </head>
+    <script src="/assets/js/testiomial.js"></script>
     <body class="bg-white">
       <header>
             <div id="menu-jk" class="nav-part shadow-md bg-white navcol">
@@ -139,7 +141,7 @@
         <h2 class="fw-bolder">Share Your Testimonial</h2>
         <p>We’d love to hear your feedback. Please fill out the form below to share your experience.</p>
     </div>
-    <form action="https://getform.io/f/bpjmvjzb" method="POST">
+    <form onsubmit="handleFormSubmit(event)">
         <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
@@ -159,64 +161,48 @@
         <button type="submit" class="btn btn-primary">Submit Testimonial</button>
     </form>
 </div>
-            
-            <footer>
-                <div class="inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 foot-about">
-                                <h4>Quick Links</h4>
-                                <a href="/index.html"><h6 style="color: #fff;">Home</h6></a>
-                                <a href="/about.html"><h6 style="color: #fff;">About US</h6></a>
-                                <a href="/products.html"><h6 style="color: #fff;">Products</h6></a>
-                                <a href="/contact.html"><h6 style="color: #fff;">Contact</h6></a>
-                            </div>
-        
-                            <div class="col-md-3 foot-news">
-                                <h4>Join Our Newsletter!</h4>
-                                <p>Be the first to get exclusive offers, the latest updates, and insider tips. Subscribe now and never miss out on exciting news!</p>
-                                
-                                <form action="https://getform.io/f/bpjmvjzb" method="POST">
-                                    <div class="input-group mb-3">
-                                        <!-- Email/Username Input -->
-                                        <input type="email" name="email" class="form-control mb-0" placeholder="Recipient's email" aria-label="Recipient's email" aria-describedby="basic-addon2" required>
-                                        
-                                        <!-- Submit Button -->
-                                        <div class="input-group-append">
-                                            <button type="submit" class="input-group-text bg-primary" id="basic-addon2">
-                                                <i class="bi text-white bi-send"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                                
-        
-                                <ul>
-                                    <li><i class="bi bi-facebook"></i></li>
-                                    <!-- <li><i class="bi bi-twitter"></i></li> -->
-                                    <li><i class="bi bi-instagram"></i></li>
-                                    <!-- <li><i class="bi bi-linkedin"></i></li> -->
-                                    <!-- <li><i class="bi bi-pinterest"></i></li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
+<footer>
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 foot-about">
+                    <h4>Quick Links</h4>
+                    <a href="/index.html"><h6 style="color: #fff;">Home</h6></a>
+                    <a href="/about.html"><h6 style="color: #fff;">About Us</h6></a>
+                    <a href="/products.html"><h6 style="color: #fff;">Products</h6></a>
+                    <a href="/contact.html"><h6 style="color: #fff;">Contact</h6></a>
                 </div>
-            </footer>
-            <div class="copy">
-                <div class="container">
-                    <a href="https://www.smarteyeapps.com/">2024 &copy; All Rights Reserved | Princess Pure Honey</a>
-        
-                    <span>
-                        <a href=""><i class="fab fa-github"></i></a>
-                        <a href=""><i class="fab fa-google-plus-g"></i></a>
-                        <a href="https://in.pinterest.com/prabnr/pins/"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="https://twitter.com/prabinraja89"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/freewebtemplatesbysmarteye"><i class="fab fa-facebook-f"></i></a>
-                    </span>
+
+                <!-- Social Media Links -->
+                <div class="col-md-3 foot-social">
+                    <h4>Follow Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/yourpage" target="_blank" class="facebook"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="https://twitter.com/yourprofile" target="_blank" class="twitter"><i class="bi bi-twitter"></i> Twitter</a></li>
+                        <li><a href="https://www.instagram.com/yourprofile" target="_blank" class="instagram"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://www.pinterest.com/yourprofile" target="_blank" class="pinterest"><i class="bi bi-pinterest"></i> Pinterest</a></li>
+                    </ul>
                 </div>
             </div>
-            
+        </div>
+    </div>
+
+    <!-- Copyright and Footer Text -->
+    <div class="copy">
+        <div class="container">
+            <a href="https://www.smarteyeapps.com/">2024 &copy; All Rights Reserved | Princess Pure Honey</a>
+            <span>
+                <a href="https://github.com/yourprofile" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                <a href="https://plus.google.com/yourprofile" target="_blank" class="google-plus"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://in.pinterest.com/yourprofile" target="_blank" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/yourpage" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            </span>
+        </div>
+    </div>
+</footer>
         
         
                 </body>
