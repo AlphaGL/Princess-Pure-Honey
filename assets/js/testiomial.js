@@ -10,7 +10,12 @@
     
                 // Construct WhatsApp URL
                 const whatsappNumber = '2349034529830'; // Replace with your WhatsApp number
-                const whatsappMessage = encodeURIComponent(`Hi, I am ${name}. My email is ${email}. My company is ${company}. Here is my testimonial: ${testimonial}`);
+                const whatsappMessage = encodeURIComponent(`
+Hi, I am ${name}. 
+Email: ${email}. 
+My company is ${company}. 
+Here is my Testimony: 
+${testimonial}`);
     
                 // Redirect to WhatsApp
                 window.location.href = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
